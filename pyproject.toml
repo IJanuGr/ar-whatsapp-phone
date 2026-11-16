@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ar-whatsapp-phone"
+version = "0.1.0"
+description = "Turn messy Argentine phone numbers into WhatsApp-ready links."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ian Janulevicius" }]
+dependencies = ["phonenumbers>=8.13"]
+keywords = ["argentina", "phone", "whatsapp", "phonenumbers", "lead-generation"]
+
+[project.urls]
+Homepage = "https://github.com/IJanuGr/ar-whatsapp-phone"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
